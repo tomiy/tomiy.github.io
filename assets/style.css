@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+#topSection {
+    position: relative;
+}
+
+#logo {
+    transform: scale(0);
+    transition: cubic-bezier(0.18, 0.89, 0.29, 1.08) 1s .5s;
+}
+
+#logo.animateEnd {
+    transform: scale(100%) rotate(360deg);
+}
+
+#logoHover {
+    display: inline-block;
+    transition: linear .2s;
+}
+
+#logoHover:hover {
+    transform: scale(105%);
+}
+
+.link {
+    opacity: 0;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    transition: ease-out .7s 1s;
+    fill: #fff;
+}
+
+.link svg:hover {
+    fill: #eee;
+}
+
+.link.animateEnd {
+    opacity: 1;
+}
+
+.link.linkedin.animateEnd {
+    top: 50px;
+    left: 460px;
+}
+
+.link.github.animateEnd {
+    top: 310px;
+    left: 460px;
+}
+
+#presentation {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -20px;
+    transition: ease-in-out .5s 1.4s;
+    text-align: justify;
+}
+
+#presentation.animateEnd {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}

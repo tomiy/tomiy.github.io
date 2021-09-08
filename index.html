@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Epical</title>
+</head>
+
+<body>
+    <div id="topSection">
+        <a class="link linkedin" href="https://www.linkedin.com/in/tomchappaz/" target="_blank">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="45" stroke="#000" stroke-width="5"></circle>
+                <image xlink:href="assets/linkedin.svg" height="50" width="50" x="25" y="25"></image>
+            </svg>
+        </a>
+
+        <a class="link github" href="https://github.com/tomiy/" target="_blank">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="45" stroke="#000" stroke-width="5"></circle>
+                <image xlink:href="assets/github.svg" height="50" width="50" x="25" y="25"></image>
+            </svg>
+        </a>
+
+        <span id="logoHover">
+            <svg id="logo" width="460" height="460">
+                <mask id="innerShade">
+                    <circle cx="268" cy="204" r="200" stroke="#000" fill="#fff" stroke-width="10"></circle>
+                    <ellipse ry="185" rx="105" cy="210" cx="340" fill="#000"></ellipse>
+                </mask>
+                <mask id="outerShade">
+                    <circle cx="230" cy="230" r="200" fill="#fff"></circle>
+                    <circle cx="340" cy="250" r="260" fill="#000"></circle>
+                </mask>
+                <circle cx="230" cy="230" r="200" stroke="#000" fill="#fff" stroke-width="10" />
+                <rect width="400" height="460" fill="#414141" transform="rotate(10 100 0)" mask="url(#innerShade)" />
+                <rect width="200" height="460" fill="#000" mask="url(#outerShade)" />
+                <ellipse ry="75" rx="45" cy="310" cx="175" stroke="#000" fill="#fff" stroke-width="8"></ellipse>
+                <ellipse ry="75" rx="45" cy="310" cx="285" stroke="#000" fill="#fff" stroke-width="8"></ellipse>
+            </svg>
+        </span>
+    </div>
+
+    <div id="presentation">
+        <h1>I am an enjoyer of the coding</h1>
+        <p>Hi! My name is Tom, I go by tomiy (all lowercase) on the internet. I like to make small fun things in
+            code and also make games. I code mainly in PHP and Javascript but I’m also ok at many other languages.</p>
+        <p>You can check me out on the github website: <a href="https://github.com/tomiy">tomiy</a></p>
+        <h2 id="projects">Projects</h2>
+        <p>Right now i’m working pretty much exclusively on <a href="https://github.com/tomiy/openrider">openrider</a>
+            which is the last link in a pretty long chain of reboots of freerider, a bike riding game where players draw
+            tracks and race on them.</p>
+        <p>I also made a <a href="https://github.com/tomiy/home-extension">bookmark popup</a> and a <a
+                href="https://github.com/tomiy/crossbladebot">PHP CLI twitch bot</a>.</p>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
